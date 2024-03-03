@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Blog_page.css"> <!-- Lien vers le fichier CSS -->
+    <title>Tu tires ou tu pointes</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tu tires ou tu pointes</h1>
+        <div class="carousel">
+            <div class="slide">
+                <img src="./pics/petanque1.jpg" alt="Carousel 1">
+            </div>
+            <div class="slide">
+                <img src="./pics/petanque2.jpg" alt="Carousel 2">
+            </div>
+            <div class="slide">
+                <img src="./pics/petanque3.jpg" alt="Carousel 3">
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="left">
+            <!-- Boutons au centre -->
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">À Propos</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="right">
+        <!-- Boutons à droite -->
+            <li>
+                <!-- Bouton S'identifier -->
+                <a href="login_logout.html">
+                    <button class="btn" type="button">
+                        <strong>S'identifier</strong>
+                        <div id="container-stars">
+                            <div id="stars"></div>
+                        </div>
+
+                        <div id="glow">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </button>
+                </a>
+                <!-- Bouton S'inscrire -->
+                <a href="signin_signout.html">
+                    <button class="btn" type="button">
+                        <strong>S'inscrire</strong>
+                        <div id="container-stars">
+                            <div id="stars"></div>
+                        </div>
+
+                        <div id="glow">
+                            <div class="circle"></div>
+                            <div class="circle"></div>
+                        </div>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="blog-post" id="post1">
+            <h2>Boulodrome de la Major meilleur terrain, vou ete des fatigé ou koi ?</h2>
+            <p>Ajouter un avis pour expliquer votre point de vue, ou commenter celui d'un mécréant</p>
+            <button class="like-button" onclick="likePost('post1')">J'aime</button>
+            <span class="like-counter" id="likeCounter_post1">0</span>
+            <textarea id="responseText_post1" placeholder="Écrivez votre réponse ici"></textarea>
+            <button onclick="submitResponse('post1')">Envoyer</button>
+        </section>
+
+        <section class="blog-post" id="post2">
+            <h2>Les Obut en 21cm ou les Ms Petanque en 20.5 ??</h2>
+            <p>Ajouter un avis pour expliquer votre point de vue, ou commenter celui d'un mécréant</p>
+            <button class="like-button" onclick="likePost('post2')">J'aime</button>
+            <span class="like-counter" id="likeCounter_post2">0</span>
+            <textarea id="responseText_post2" placeholder="Écrivez votre réponse ici"></textarea>
+            <button onclick="submitResponse('post2')">Envoyer</button>
+        </section>
+
+        <section class="blog-post" id="post3">
+            <h2>C'est quoi les meilleurs gants pour le tir ??</h2>
+            <p>Ajouter un avis pour expliquer votre point de vue, ou commenter celui d'un mécréant</p>
+            <button class="like-button" onclick="likePost('post3')">J'aime</button>
+            <span class="like-counter" id="likeCounter_post3">0</span>
+            <textarea id="responseText_post3" placeholder="Écrivez votre réponse ici"></textarea>
+            <button onclick="submitResponse('post3')">Envoyer</button>
+        </section>
+
+        <section class="blog-post" id="post4">
+            <h2>Dylan Roger ou Jean Feltain en sah les gars ?!?</h2>
+            <p>Ajouter un avis pour expliquer votre point de vue, ou commenter celui d'un mécréant</p>
+            <button class="like-button" onclick="likePost('post4')">J'aime</button>
+            <span class="like-counter" id="likeCounter_post4">0</span>
+            <textarea id="responseText_post4" placeholder="Écrivez votre réponse ici"></textarea>
+            <button onclick="submitResponse('post4')">Envoyer</button>
+        </section>
+    </main>
+    <footer class="footer-10">
+			<div class="container">
+				<div class="row mb-5 pb-3 no-gutters">
+					<div class="col-md-4 mb-md-0 mb-4 d-flex">
+						<div class="con con-1 w-100 py-5">
+							<div class="con-info w-100 text-center">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="ion-ios-call"></span>
+								</div>
+								<div class="text">
+									<span>(+33) 0787328709</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-md-0 mb-4 d-flex">
+						<div class="con con-2 w-100 py-5">
+							<div class="con-info w-100 text-center">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="ion-ios-mail"></span>
+								</div>
+								<div class="text">
+									<span>tutiresoutupointes@forum.com</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 mb-md-0 mb-4 d-flex">
+						<div class="con con-3 w-100 py-5">
+							<div class="con-info w-100 text-center">
+								<div class="icon d-flex align-items-center justify-content-center">
+									<span class="ion-ios-pin"></span>
+								</div>
+								<div class="text">
+									<span>6 impasse des marandés, Toulouse, France</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-7">
+						<div class="row">
+							<div class="col-md-4 mb-md-0 mb-4">
+								<h3 class="footer-heading">A propos</h3>
+								<ul class="list-unstyled">
+		              <li><a href="#" class="d-block">Accueil</a></li>
+		              <li><a href="#" class="d-block">A propos</a></li>
+		              <li><a href="#" class="d-block">L'équipe</a></li>
+		              <li><a href="#" class="d-block">Career</a></li>
+		            </ul>
+							</div>
+							<div class="col-md-4 mb-md-0 mb-4">
+								<h3 class="footer-heading">Company</h3>
+								<ul class="list-unstyled">
+		              <li><a href="#" class="d-block">Nos services</a></li>
+		              <li><a href="#" class="d-block">Contact</a></li>
+		              <li><a href="#" class="d-block">Clients</a></li>
+		              <li><a href="#" class="d-block">Presses</a></li>
+		            </ul>
+							</div>
+							<div class="col-md-4 mb-md-0 mb-4">
+								<h3 class="footer-heading">Ressources</h3>
+								<ul class="list-unstyled">
+		              <li><a href="#" class="d-block">Blog</a></li>
+		              <li><a href="#" class="d-block">Newsletter</a></li>
+		              <li><a href="#" class="d-block">Privacy Policy</a></li>
+		            </ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-5 mb-md-0 mb-4">
+						<h3 class="footer-heading">S'Abonner</h3>
+						<form action="#" class="subscribe-form">
+              <div class="form-group d-flex">
+                <input type="text" class="form-control rounded-left" placeholder="Enter email address">
+                <button type="submit" class="form-control submit rounded-right">S'Abonner</button>
+              </div>
+              <span class="subheading">Abonnez-vous à la Newsletter</span>
+            </form>
+					</div>
+				</div>
+				<div class="row mt-5 pt-4 border-top">
+          <div class="col-md-6 col-lg-8 mb-md-0 mb-4">
+            <p class="copyright mb-0">
+          </div>
+          <div class="col-md-6 col-lg-4 text-md-right">
+          	<ul class="ftco-footer-social p-0">
+                <li class="ftco-animate">
+                    <a href="https://www.x.com/" data-toggle="tooltip" data-placement="top" title="X">
+                        <img src="pics/x.png" alt="Logo X" class="img1">
+                    </a>
+                </li>
+                <li class="ftco-animate">
+                    <a href="https://www.meta.com/" data-toggle="tooltip" data-placement="top" title="Meta">
+                        <img src="pics/meta.png" alt="Logo Meta" class="img2">
+                    </a>
+                </li>
+                <li class="ftco-animate">
+                    <a href="https://www.instagram.com/" data-toggle="tooltip" data-placement="top" title="Instagram">
+                        <img src="pics/insta.png" alt="Logo Instagram" class="img3">
+                    </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+			</div>
+	</footer>
+    <script>
+        // Fonction pour gérer les likes
+        function likePost(postId) {
+            var likeCounter = document.getElementById('likeCounter_' + postId);
+            var currentLikes = parseInt(likeCounter.innerHTML);
+            likeCounter.innerHTML = currentLikes + 1;
+        }
+        
+        // Fonction pour soumettre une réponse à un post
+        function submitResponse(postId) {
+            // Récupérer le contenu de la zone de texte de réponse
+            var responseText = document.getElementById('responseText_' + postId).value;
+
+            // Créer un élément de paragraphe pour afficher la réponse avec le nom de l'auteur
+            var responseParagraph = document.createElement('p');
+            responseParagraph.innerHTML = "<strong style='color: orange;'>Hugo a écrit :</strong> " + responseText;
+
+            // Ajouter la réponse à la section de blog post
+            var blogPost = document.getElementById(postId);
+            blogPost.appendChild(responseParagraph);
+
+            // Effacer le contenu de la zone de texte de réponse après avoir soumis la réponse
+            document.getElementById('responseText_' + postId).value = '';
+        }
+
+        // Fonction pour détecter le clic sur le lien "Accueil" et faire défiler la page jusqu'à l'endroit souhaité
+        document.querySelector('nav ul li:first-child a').addEventListener('click', function(event) {
+            event.preventDefault(); // Empêche le comportement par défaut du lien
+            var targetElement = document.getElementById('top'); // Remplacez 'top' par l'identifiant de l'élément où vous souhaitez naviguer
+            targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Faites défiler la page jusqu'à l'élément cible avec un effet de défilement fluide
+        });
+
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
