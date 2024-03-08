@@ -28,9 +28,7 @@ header h1 {
     transform: translate(-50%, -50%); /* Déplacer le titre de moitié de sa propre largeur et hauteur pour le centrer parfaitement */
     z-index: 999; /* Assurer que le titre est au-dessus du carousel */
     min-width: 80%;
-    border: 20px solid #4c956c; /* Ajoute une bordure blanche de 5 pixels autour du titre */
     padding: 10px; /* Ajoute un espacement à l'intérieur de la bordure */
-    background-color: #efe6dd;
 }
 
 .slide {
@@ -180,7 +178,7 @@ main {
     color: #fff;
     text-align: center;
     line-height: normal;
-    background: linear-gradient(90deg,#97afc7 20%,#0074e4 100%);
+    background: linear-gradient(90deg,#27292b 40%,#0074e4 80%);
     border-radius: 50px;
     transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
 }
