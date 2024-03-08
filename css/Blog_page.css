@@ -30,6 +30,7 @@ header h1 {
     min-width: 80%;
     border: 20px solid #4c956c; /* Ajoute une bordure blanche de 5 pixels autour du titre */
     padding: 10px; /* Ajoute un espacement à l'intérieur de la bordure */
+    background-color: #efe6dd;
 }
 
 .slide {
@@ -140,6 +141,7 @@ main {
     padding: 10px;
     margin-top: 10px;
     resize: vertical; /* Permet à l'utilisateur de redimensionner la zone de texte verticalement */
+    border-radius: 45px;
 }
 
 /* Styles pour le bouton "Envoyer" */
@@ -178,7 +180,7 @@ main {
     color: #fff;
     text-align: center;
     line-height: normal;
-    background: linear-gradient(90deg,#5522fa 0,#0074e4 100%);
+    background: linear-gradient(90deg,#97afc7 20%,#0074e4 100%);
     border-radius: 50px;
     transition: color .2s ease,background-color .2s ease,box-shadow .2s ease;
 }
@@ -187,3 +189,17 @@ main {
     box-shadow: 0 0 0 0.15rem #5ceace;
 }
             
+
+/*For video section*/
+
+/* Styles pour les sections de vidéos */
+.video-section {
+  margin-top: 20px; /* Marge en haut de chaque section vidéo */
+  margin: auto;
+}
+
+.video-section video {
+  display: block; /* Afficher la vidéo en tant que bloc pour centrer */
+  margin: 0 auto; /* Centrer la vidéo horizontalement */
+  max-width: 100%; /* Empêcher la vidéo de dépasser de la largeur de son conteneur */
+}

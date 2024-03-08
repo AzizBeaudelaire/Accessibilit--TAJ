@@ -110,6 +110,7 @@ a {
   color: #1a1a1a; /* Couleur du texte des liens */
   text-decoration: none;
   background-color: transparent;
+  font-size: 20px;
 }
 
 a:hover {
@@ -273,10 +274,18 @@ h1, h2, h3, h4, h5, h6,
 
 /* Style pour h1 et .h1 */
 h1, .h1 {
-  font-weight: 700; /* Met le texte en gras */
-  font-family: Arial, sans-serif; /* Choix d'une police de caractères */
-  font-size: 6em; /* Taille de la police */
-  color: purple; /* Couleur de texte plus foncée pour un meilleur contraste */
+  font-size: 80px;
+  text-shadow: -1px -1px #9df, 1px 1px #49d, -3px 0 4px #000;
+  font-family: "Segoe print", Arial, Helvetica, sans-serif;
+  color: #02A9EA;
+  padding: 24px 32px 32px 32px;
+  font-weight: lighter;
+  -moz-box-shadow: 2px 2px 6px #888;  
+  -webkit-box-shadow: 2px 2px 6px #888;  
+  box-shadow: 2px 2px 6px #888;  
+  text-align: center;
+  display: inline;
+  line-height: 150px;
 }
 
 /* Style pour h2 et .h2 */
@@ -287,19 +296,23 @@ h2, .h2 {
   color: #555; /* Couleur de texte légèrement plus foncée */
 }
 
-/* Style pour h3 et .h3 */
+/* Styles pour h3 et .h3 */
 h3, .h3 {
+  font-size: 1.5rem; /* Taille de la police */
+  color: #666; /* Couleur de texte légèrement plus foncée */
+  text-align: center; /* Centrer le texte */
+  margin: 20px 0; /* Ajouter un espace en haut et en bas */
+  line-height: 1.5; /* Espacement entre les lignes */
+}
+
+/* Style pour h4 et .h4 */
+h4, .h4 {
   font-weight: 100; /* Met le texte en gras */
   font-family: Arial, sans-serif; /* Choix d'une police de caractères */
   font-size: 1.5em; /* Taille de la police */
   color: #444; /* Couleur de texte légèrement plus foncée */
 }
 
-/* Styles pour h4 et .h4 */
-h4, .h4 {
-  font-size: 1.5rem; /* Taille de la police */
-  color: #666; /* Couleur de texte légèrement plus foncée */
-}
 
 /* Styles pour h5 et .h5 */
 h5, .h5 {
@@ -7293,7 +7306,9 @@ a {
     margin-bottom: 0; }
 
 footer {
-  padding: 7em 0; }
+  padding: 7em 0; 
+  max-height: 600px;  
+}
 
 .footer-10 {
   background: #222222;

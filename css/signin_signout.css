@@ -51,6 +51,9 @@ body {
   line-height: 1.5;
   color: #c8dcb4;
   text-align: left;
+}
+
+.bg {
   background-image: url('../pics/bg.jpg'); /* Définir l'image d'arrière-plan */
   background-size: cover; /* Ajuster la taille de l'image pour couvrir tout l'arrière-plan */
   background-position: center; /* Centrer l'image sur l'arrière-plan */
